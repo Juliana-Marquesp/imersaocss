@@ -1,23 +1,8 @@
 body {
-	background-image: url(https://i.stack.imgur.com/9WYxT.png);
+	background-image: url(https://pbs.twimg.com/media/EX1Xi6aXgAISmge?format=jpg&name=large);
 	background-size: 100%;
 	font-family: arial;
 }
-
-body:visited {
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: FlipV;
-    -ms-filter: "FlipV";
-
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";}
 
 .menu {
 	background-color: azure;
