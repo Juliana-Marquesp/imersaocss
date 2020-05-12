@@ -1,0 +1,40 @@
+body {
+	background-image: url(fundo.png);
+	background-size: 100%;
+	font-family: arial;
+}
+
+.menu {
+	background-color: azure;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+a {
+	color: darkred;
+	text-decoration: none;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.site-title {
+	text-align: center;
+	color: black;
+}
+
+
+.site-subtitle {
+	text-align: center;
+	color: black;
+	font-style: italic;
+}
