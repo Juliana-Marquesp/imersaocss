@@ -5,7 +5,7 @@
 } /*css reset*/
 
 body {
-	background-color: #F8FFF0;
+	background-color: #000a12;
 	background-size: 100vh;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 12px;
@@ -20,7 +20,7 @@ header {
 }
 
 .menu {
-	background-color: #7591f0;
+	background-color: #3e64bd;
 	font-family: 'Merriweather', serif;
 	position: fixed;
 	top: 0;
@@ -47,30 +47,30 @@ a:hover {
 }
 
 a {
-	color: black;
+	color: #000a12;
 	text-decoration: none;
 }
 
 .site-title {
-	color: black;
+	color: #a9c1ff;
 	font-family: 'Cardo', serif;
 	font-size: 4em;
 }
 
 .site-subtitle {
-	color: black;
+	color: #a9c1ff;
 	font-style: italic;
 	line-height: 1.8em;
 }
 
 p {
-	color: gray;
+	color: #F0FFFF;
 	font-size: 1.5em;
 	margin: 50px 20px 0px;
 	text-align: justify;
 }
 
-h2 {
+section h2 {
 	font-family: 'Merriweather', serif;
 	font-size: 1.8em;
 	margin: 0px  0px 20px;
@@ -78,6 +78,7 @@ h2 {
 
 section h2 {
 	font-size: 2.5em;
+	color: #a9c1ff;
 }
 
 .portfolio, .contato {
@@ -93,7 +94,7 @@ section h2 {
 	}
 
 figcaption {
-	color: gray;
+	color: #F0FFFF;
 	font-family: 'Merriweather', serif;
 	font-size: 1.5em;
 }
@@ -108,11 +109,10 @@ figcaption {
 
 .posição-playlist {
 	display: grid;
-	grid-column-gap: 1.5em;
+	grid-gap: 1.5em;
 	grid-template-columns: 100px;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1.5em;
 }
 
 /* se a tela tiver pelo menos 200px estes
@@ -193,7 +193,12 @@ figcaption {
 
 @media (min-width: 500px) {
 	.posição-playlist {
-		grid-template-columns: 150px 150px}
+		grid-template-columns: 150px 150px;
+	}
+
+	.img-playlist {
+		margin: 0 1.5em;
+	}
 }
 
 @media(min-width: 600px) {
@@ -258,6 +263,7 @@ figcaption {
 	img:hover {
 		height: 265px;
 		width: 265px;
+
 		transition: 0.5s;
 	}
 
@@ -273,6 +279,7 @@ figcaption {
 	.img-playlist:hover {
 		height: 265px;
 		width: 265px;
+		box-shadow: 0px 0px 30px 1px #000030;
 		transition: 0.5s;
 	}
 }
