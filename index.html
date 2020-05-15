@@ -6,15 +6,16 @@
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">  <!--site responsivo-->
   <link rel="stylesheet" type="text/css" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Merriweather&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de5cce2473.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-	     	<li><a href="#">Contato</a></li>
-        <li><a href="#">Playlist</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio e Contato</a></li>
+        <li><a href="#playlist">Playlist</a></li>
     	</ul>
     </nav>
     <div>
@@ -25,58 +26,62 @@
     	Você pode verificar outras informações minhas rolando a página para baixo ou navegando  pelo menu acima.</p>
     </div>
   </header>
-  <section class="portfolio">
-  	<h2>Portfólio</h2>
+
+  <section id="portfolio" class="portfolio">
+  	<h2>Portfólio e Contato</h2>
   	<div  class="posição-portfolio">
-  		<figure>
-   	 		<img class="img-portfolio" src="./minhas imagens/github.png" alt="GitHub">
-   	 		<figcaption>GitHub</figcaption>
-  		</figure>
- 		<figure>
-    		<img class="img-portfolio" src="./minhas imagens/instagram-icon.png" alt=">Instagram">
-    		<figcaption>Instagram</figcaption>
-  		</figure>
+      <a target="_blank" href="https://github.com/Juliana-Marquesp">
+   	 		<i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/jcloudsky/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a target="_blank" href="">
+        <i class="fas fa-envelope"></i>
+      </a>
   	</div>
   </section>
-  <section class="contato">
-    <h2>Contato</h2>
-      <div>
-        <p>Em breve...</p>
-      </div>
-  </section>
-  <section class="playlist">
+
+  <section id="playlist" class="playlist">
   	<h2>Playlist</h2>
   	<div class="posição-playlist">
+
   		<figure>
   			<a href="https://open.spotify.com/track/2qbfKj0DTl7szigi1RSRaL?si=HnBChjTBQje2hDy_AlnKSA">
     		<img class="img-playlist" src="./minhas imagens/notnow.jfif" alt="Ally Hills - Not Now" title="Ally Hills - Not Now">
     		</a>
   		</figure>
+
   		 <figure>
   		 	<a href="https://open.spotify.com/album/5GpWKpMkkFoz94PFxBeAJF?si=1CzJX5zlSDWI06D7LZz-Jg">
     		<img class="img-playlist" src="./minhas imagens/meconta.png" alt="Anavitótia - Me Conta Da Sua Janela" title="Anavitótia - Me Conta Da Sua Janela">
     		</a>
   		</figure>
+
   		<figure>
   			<a href="https://open.spotify.com/album/1kCHru7uhxBUdzkm4gzRQc?si=t3VLszJaTOOsoTg4VBnq3g">
     		<img class="img-playlist" src="./minhas imagens/hamilton.jpg" alt="Hamilton (Original Broadway Cast Recording)" title="Hamilton (Original Broadway Cast Recording)">
     		</a>
   		</figure>
+
   		<figure>
   			<a href="https://open.spotify.com/track/2MKIadkPrRqaivpyn6cnI0">
     		<img class="img-playlist" src="./minhas imagens/Human.jpg" alt="Dodie Clark - Monster" title="Dodie Clark - Monster">
     		</a>
   		</figure>
+
   		<figure>
   			<a href="https://open.spotify.com/album/6YCCXSCAnh4Ppzs8Hv3xXd?si=NaSKFTLhTJm3MRpRCKj4Nw">
     		<img class="img-playlist" src="./minhas imagens/crush.jpg" alt="Tessa Violet - Crush" title="Tessa Violet - Crush">
     		</a>
   		</figure>
+
   		<figure>
   			<a href="https://open.spotify.com/track/3lmJOkR3f8qh1Aa20mPQau?si=Uq-NeEQBQZSnP2_E6KQEpw">
     		<img class="img-playlist" src="./minhas imagens/wicked.jpg" alt="Wicked - What's This Feeling" title="Wicked - What's This Feeling">
     		</a>
   		</figure>
+
   	</div>
   </section>
 </body>

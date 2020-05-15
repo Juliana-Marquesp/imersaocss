@@ -25,6 +25,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	z-index: 1;
 }
 
 .menu li {
@@ -42,13 +43,13 @@ header {
 	padding: 15px 05px;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 a {
 	color: #000a12;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .site-title {
@@ -73,38 +74,39 @@ p {
 section h2 {
 	font-family: 'Merriweather', serif;
 	font-size: 1.8em;
-	margin: 0px  0px 20px;
-}
-
-section h2 {
+	margin: 0px  0px 45px;
 	font-size: 2.5em;
 	color: #a9c1ff;
 }
 
-.portfolio, .contato {
-	height: 100vh;
+#portfolio{
+	padding: 70px;
+	min-height: calc(100vh - 47px);
 }
 
 .posição-portfolio {
 	display: grid;
-	grid-gap: 3em;
-	grid-template-columns: 70px 70px;
+	grid-template-columns: 13em 13em 13em;
+	grid-gap: 1.5em;
 	justify-content: center;
-	align-items: center;
-	}
+	align-items: center;  
+}
 
-figcaption {
+.posição-portfolio a {
+	display: block;
 	color: #F0FFFF;
-	font-family: 'Merriweather', serif;
-	font-size: 1.5em;
+	font-size: 13em;
+
 }
 
-.contato p {
-	text-align: center;
+.posição-portfolio a:hover {
+	transform: scale(1.18);
+	transition: 1s;
 }
 
-.playlist{
-	height: calc(100vh - 510px - 47px - 20px - 15px - 20px)
+#playlist{
+	padding: 70px;
+	min-height: calc(100vh - 47px);
 }
 
 .posição-playlist {
@@ -112,8 +114,13 @@ figcaption {
 	grid-gap: 1.5em;
 	grid-template-columns: 100px;
 	justify-content: center;
-	align-items: center;
+	align-content: center;
 }
+
+.img-playlist:hover {
+	transform: scale(1.1);
+	transition: 0.8s;
+	}
 
 /* se a tela tiver pelo menos 200px estes
  estilos vão carregar*/
@@ -136,16 +143,10 @@ figcaption {
 		margin: 20px;
 	}
 
-	img {
-		height: 70px;
-		width: 70px;;
-	}
-
 	.img-playlist {
 		height: 100px;
 		width: 100px;
 	}
-
 }
 
 @media(min-width: 300px) {
@@ -153,13 +154,8 @@ figcaption {
 		font-size: 11px;
 	}
 
-	img {
-		height: 125px;
-		width: 125px;
-	}
-
 	.posição-portfolio {
-		grid-template-columns: 170px 170px;
+		grid-template-columns: 170px 170px 170px;
 	}
 
 	.posição-playlist {
@@ -170,15 +166,9 @@ figcaption {
 		height: 150px;
 		width: 150px;
 	}
-
 }
 
 @media(min-width: 400px) {
-	img {
-		height: 150px;
-		width: 150px;
-	}
-
 	.posição-playlist {
 		grid-template-columns: 170px;
 	}
@@ -186,18 +176,12 @@ figcaption {
 	.img-playlist {
 		height: 170px;
 		width: 170px;
-		margin: 0px 5px;
 	}
-
 }
 
 @media (min-width: 500px) {
 	.posição-playlist {
 		grid-template-columns: 150px 150px;
-	}
-
-	.img-playlist {
-		margin: 0 1.5em;
 	}
 }
 
@@ -214,11 +198,6 @@ figcaption {
 
 	p {
 	margin: 50px;
-	}
-
-	img {
-		height: 170px;
-		width: 170px;
 	}
 
 	.posição-playlist {
@@ -252,19 +231,7 @@ figcaption {
 	}
 
 	.posição-portfolio {
-		grid-template-columns: 250px 250px;
-	}
-
-	img {
-		height: 250px;
-		width: 250px;
-	}
-
-	img:hover {
-		height: 265px;
-		width: 265px;
-
-		transition: 0.5s;
+		grid-template-columns: 250px 250px 250px;
 	}
 
 	.posição-playlist {
@@ -274,18 +241,5 @@ figcaption {
 	.img-playlist {
 		height: 250px;
 		width: 250px;
-	}
-
-	.img-playlist:hover {
-		height: 265px;
-		width: 265px;
-		box-shadow: 0px 0px 30px 1px #000030;
-		transition: 0.5s;
-	}
-}
-
-@media (min-width: 1200px) {
-	.posição-playlist {
-	justify-content: space-around;
 	}
 }
