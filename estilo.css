@@ -84,12 +84,14 @@ section h2 {
 	min-height: calc(100vh - 47px);
 }
 
-.posição-portfolio {
-	display: grid;
-	grid-template-columns: 13em 13em 13em;
-	grid-gap: 1.5em;
+.posição-portfolio a {
+	display: grid;		
+	grid-template-columns: 10em;
+	grid-gap: 1em;
 	justify-content: center;
-	align-items: center;  
+	align-items: center;
+	color: #F0FFFF;
+	font-size: 10em;
 }
 
 .posição-portfolio a {
@@ -137,14 +139,6 @@ section h2 {
 		margin: 20px;
 	}
 
-	.posição-portfolio {
-		display: grid;
-		grid-template-columns: 8em 8em 8em;
-		grid-gap: 1.5em;
-		justify-content: center;
-		align-items: center;  
-	}
-
 	.posição-portfolio a {
 		display: block;
 		color: #F0FFFF;
@@ -160,10 +154,6 @@ section h2 {
 @media(min-width: 300px) {
 	body {
 		font-size: 11px;
-	}
-
-	.posição-portfolio {
-		grid-template-columns: 170px 170px 170px;
 	}
 
 	.posição-playlist {
@@ -188,12 +178,14 @@ section h2 {
 }
 
 @media (min-width: 500px) {
-	.posição-portfolio {
+	.posição-portfolio a {
 		display: grid;
 		grid-template-columns: 12em 12em 12em;
-		grid-gap: 1.5em;
+		grid-gap: 1em;
 		justify-content: center;
-		align-items: center;  
+		align-items: center;
+		color: #F0FFFF;
+		font-size: 10em;
 	}
 
 	.posição-portfolio a {
@@ -212,32 +204,34 @@ section h2 {
 	}
 
 	.menu a {
-	display: block;
-	font-size: 1.4em;
-	padding: 15px 05px;
+		display: block;
+		font-size: 1.4em;
+		padding: 15px 05px;
 	}
 
 	p {
-	margin: 50px;
+		margin: 50px;
+	}
+	
+	#portfolio{
+		padding: 70px;
+		min-height: calc(100vh - 41px - 130px);
 	}
 
 	.posição-portfolio a {
-		display: grid;
-		grid-template-columns: 10em 10em 10em;
-		grid-gap: 1em;
 		justify-content: center;
 		align-items: center;
 		color: #F0FFFF;
 		font-size: 10em;
 	}
 
-	.posição-portfolio a:hover {
-		transform: scale(1.18);
-		transition: 1s;
+	#playlist{
+		padding: 70px;
+		min-height: calc(100vh - 41px - 651px);
 	}
 
 	.posição-playlist {
-		grid-template-columns: 200px 200px 200px;
+		grid-template-columns: 200px 200px;
 	}
 
 	.img-playlist {
