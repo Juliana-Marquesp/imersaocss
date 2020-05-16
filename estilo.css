@@ -220,11 +220,15 @@ section h2 {
 	p {
 	margin: 50px;
 	}
-	.posição-portfolio a {
-		display: block;
-		color: #F0FFFF;
-		font-size: 13em;
 
+	.posição-portfolio a {
+		display: grid;
+		grid-template-columns: 10em 10em 10em;
+		grid-gap: 1em;
+		justify-content: center;
+		align-items: center;
+		color: #F0FFFF;
+		font-size: 10em;
 	}
 
 	.posição-portfolio a:hover {
